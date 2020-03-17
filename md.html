@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; height=device-height;">
+        <title>Markdown Test</title>
+        <link rel="stylesheet" href="./css/mrdja-markdown-editor.css" />
+        <link rel="stylesheet" href="./misc/MaterialDesign-Webfont/css/materialdesignicons.min.css" />
+        <link rel="stylesheet" href="./css/markdown.css" />
+        <link rel="stylesheet" href="./css/embed.css" />
+        <link rel="stylesheet" href="./misc/plyr/plyr.css" />
+</head>
+
+<body>
+        <style>
+                body {
+                        height: 100vh;
+                        background: #505050;
+                }
+        </style>
+        <h1>Markdown editor:</h1>
+        <textarea id="input"></textarea>
+
+        <script src="./misc/plyr/plyr.min.js"></script>
+        <script src="./js/markdown.js"></script>
+        <script src="./js/embeds.js"></script>
+        <script src="./js/split.min.js"></script>
+        <script src="./js/UndoRedo.js"></script>
+        <script src="./js/mrdja-markdown-editor.js"></script>
+        <script>
+                a = window.mrdjaMDE("#input");
+        </script>
+</body>
+
+</html>
