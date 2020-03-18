@@ -51,8 +51,9 @@ window.mrdjaEmbeds = async function (img) { //So for markdown we will use the im
                     const embed = document.createElement("iframe");
                     embed.setAttribute('class', '_EMBED_iframe');
                     embed.setAttribute('src', `https://www.youtube.com/embed/${id}`);
-                    embed.setAttribute('width', '560px');
-                    embed.setAttribute('height', '340px');
+                    embed.setAttribute('max-width', '100%');
+                    embed.setAttribute('min-width', '200px');
+                    embed.setAttribute('height', '100%');
                     embed.setAttribute('frameborder', '0');
                     embed.setAttribute('allowfullscreen', '');
                     embed.setAttribute('allow', 'encrypted-media');
