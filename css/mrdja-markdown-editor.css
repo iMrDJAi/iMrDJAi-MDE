@@ -6,10 +6,6 @@
 
 }
 
-
-
-
-
 .markdown-editor-toolbar {
     -webkit-user-select: none;
     box-sizing: border-box;
@@ -111,12 +107,6 @@
 .gutter.gutter-horizontal {
     cursor: col-resize;
 }
-
-
-
-
-
-
 
 @media only screen and (max-width: 768px) {
     .markdown-editor {
