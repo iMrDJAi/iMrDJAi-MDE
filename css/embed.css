@@ -6,6 +6,7 @@
     border: #bbbbbb solid 1px;
     border-radius: 10px;
     background: #1b1b1b;
+    overflow: hidden;
 }
 
 ._EMBED_iframe {
