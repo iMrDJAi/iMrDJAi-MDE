@@ -115,5 +115,11 @@
 
     .markdown-editor-button {
         font-size: 27px;
+        height: 35px;
+        width: 35px;
+    }
+    
+    .markdown-editor-separator {
+        font-size: 25px;
     }
 }
