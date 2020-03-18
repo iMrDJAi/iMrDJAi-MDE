@@ -12,6 +12,7 @@ Thats the [Github Pages](https://imrdjai.github.io/iMrDJAi-MDE/?version=) link, 
 - [ ] Update the sup/subscript regex (to support using the links syntex).
 - [ ] Update the Embeds system (it needs more work).
 - [ ] Add customizable text length limit.
+- [ ] Update the help text.
 - [ ] More unexpected work.
 - [ ] First release.
 ## Problems
