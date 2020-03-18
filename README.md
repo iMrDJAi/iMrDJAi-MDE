@@ -13,4 +13,8 @@ Thats the [Github Pages](https://imrdjai.github.io/iMrDJAi-MDE/?version=) link, 
 - [ ] First release.
 ## Future plans
 - Add Codemirror and customize the markdown mode to add the new tags.
-- Add new tags.
+- Add new tags:
+  - Colors (using §n like Minecraft).
+  - Task-lists (like Github).
+  - Emojies (like Discord).
+  - More..
