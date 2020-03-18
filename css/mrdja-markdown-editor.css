@@ -90,6 +90,10 @@
     margin-right: 15px;
 }
 
+.markdown-editor-preview img {
+    max-width: 100%;
+}
+
 .gutter {
     width: 15px !important;
     background: #2f2f2f;
