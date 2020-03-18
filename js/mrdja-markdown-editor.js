@@ -12,144 +12,144 @@
 
         //The default buttons
         mrdjaMDE.defaultButtonsObj = [{
-                name: "undo",
-                icon: "&#xF54C;",
-                css_class: "markdown-editor-button",
-                action: undo,
-            },
-            {
-                name: "redo",
-                icon: "&#xF44E;",
-                css_class: "markdown-editor-button",
-                action: redo,
-            },
-            {
-                icon: "&#xF374",
-                css_class: "markdown-editor-separator",
-                type: "separator"
-            },
-            {
-                name: "bold",
-                icon: "&#xF264;",
-                css_class: "markdown-editor-button",
-                action: bold,
-            },
-            {
-                name: "italic",
-                icon: "&#xF277;",
-                css_class: "markdown-editor-button",
-                action: italic,
-            },
-            {
-                name: "underline",
-                icon: "&#xF287;",
-                css_class: "markdown-editor-button",
-                action: underline,
-            },
-            {
-                name: "strikethrough",
-                icon: "&#xF281;",
-                css_class: "markdown-editor-button",
-                action: strikethrough,
-            },
-            {
-                name: "supscript",
-                icon: "&#xF283;",
-                css_class: "markdown-editor-button",
-                action: supscript,
-            },
-            {
-                name: "subscript",
-                icon: "&#xF282;",
-                css_class: "markdown-editor-button",
-                action: subscript,
-            },
-            {
-                icon: "&#xF374",
-                css_class: "markdown-editor-separator",
-                type: "separator"
-            },
-            {
-                name: "heading",
-                icon: "&#xF274;",
-                css_class: "markdown-editor-button",
-                action: heading,
-            },
-            {
-                name: "quote",
-                icon: "&#xF756;",
-                css_class: "markdown-editor-button",
-                action: quote,
-            },
-            {
-                name: "spoiler",
-                icon: "&#xF026;",
-                css_class: "markdown-editor-button",
-                action: spoiler,
-            },
-            {
-                name: "inline code",
-                icon: "&#xF174;",
-                css_class: "markdown-editor-button",
-                action: inlineCode,
-            },
-            {
-                name: "code block",
-                icon: "&#xF169;",
-                css_class: "markdown-editor-button",
-                action: codeBlock,
-            },
-            {
-                icon: "&#xF374",
-                css_class: "markdown-editor-separator",
-                type: "separator"
-            },
-            {
-                name: "ordered list",
-                icon: "&#xF27B;",
-                css_class: "markdown-editor-button",
-                action: orderedList,
-            },
-            {
-                name: "unordered list",
-                icon: "&#xF279;",
-                css_class: "markdown-editor-button",
-                action: unorderedList,
-            },
-            {
-                name: "table",
-                icon: "&#xF4EB;",
-                css_class: "markdown-editor-button",
-                action: table,
-            },
-            {
-                icon: "&#xF374",
-                css_class: "markdown-editor-separator",
-                type: "separator"
-            },
-            {
-                name: "link",
-                icon: "&#xF339;",
-                css_class: "markdown-editor-button",
-                action: link,
-            },
-            {
-                name: "image",
-                icon: "&#xF2E9;",
-                css_class: "markdown-editor-button",
-                action: image,
-            },
-            {
-                icon: "&#xF374",
-                css_class: "markdown-editor-separator",
-                type: "separator"
-            },
-            {
-                name: "help",
-                icon: "&#xF2D7;",
-                css_class: "markdown-editor-button",
-                action: help,
-            },
+            name: "undo",
+            icon: "&#xF54C;",
+            css_class: "markdown-editor-button",
+            action: undo,
+        },
+        {
+            name: "redo",
+            icon: "&#xF44E;",
+            css_class: "markdown-editor-button",
+            action: redo,
+        },
+        {
+            icon: "&#xF374",
+            css_class: "markdown-editor-separator",
+            type: "separator"
+        },
+        {
+            name: "bold",
+            icon: "&#xF264;",
+            css_class: "markdown-editor-button",
+            action: bold,
+        },
+        {
+            name: "italic",
+            icon: "&#xF277;",
+            css_class: "markdown-editor-button",
+            action: italic,
+        },
+        {
+            name: "underline",
+            icon: "&#xF287;",
+            css_class: "markdown-editor-button",
+            action: underline,
+        },
+        {
+            name: "strikethrough",
+            icon: "&#xF281;",
+            css_class: "markdown-editor-button",
+            action: strikethrough,
+        },
+        {
+            name: "supscript",
+            icon: "&#xF283;",
+            css_class: "markdown-editor-button",
+            action: supscript,
+        },
+        {
+            name: "subscript",
+            icon: "&#xF282;",
+            css_class: "markdown-editor-button",
+            action: subscript,
+        },
+        {
+            icon: "&#xF374",
+            css_class: "markdown-editor-separator",
+            type: "separator"
+        },
+        {
+            name: "heading",
+            icon: "&#xF274;",
+            css_class: "markdown-editor-button",
+            action: heading,
+        },
+        {
+            name: "quote",
+            icon: "&#xF756;",
+            css_class: "markdown-editor-button",
+            action: quote,
+        },
+        {
+            name: "spoiler",
+            icon: "&#xF026;",
+            css_class: "markdown-editor-button",
+            action: spoiler,
+        },
+        {
+            name: "inline code",
+            icon: "&#xF174;",
+            css_class: "markdown-editor-button",
+            action: inlineCode,
+        },
+        {
+            name: "code block",
+            icon: "&#xF169;",
+            css_class: "markdown-editor-button",
+            action: codeBlock,
+        },
+        {
+            icon: "&#xF374",
+            css_class: "markdown-editor-separator",
+            type: "separator"
+        },
+        {
+            name: "ordered list",
+            icon: "&#xF27B;",
+            css_class: "markdown-editor-button",
+            action: orderedList,
+        },
+        {
+            name: "unordered list",
+            icon: "&#xF279;",
+            css_class: "markdown-editor-button",
+            action: unorderedList,
+        },
+        {
+            name: "table",
+            icon: "&#xF4EB;",
+            css_class: "markdown-editor-button",
+            action: table,
+        },
+        {
+            icon: "&#xF374",
+            css_class: "markdown-editor-separator",
+            type: "separator"
+        },
+        {
+            name: "link",
+            icon: "&#xF339;",
+            css_class: "markdown-editor-button",
+            action: link,
+        },
+        {
+            name: "image",
+            icon: "&#xF2E9;",
+            css_class: "markdown-editor-button",
+            action: image,
+        },
+        {
+            icon: "&#xF374",
+            css_class: "markdown-editor-separator",
+            type: "separator"
+        },
+        {
+            name: "help",
+            icon: "&#xF2D7;",
+            css_class: "markdown-editor-button",
+            action: help,
+        },
         ];
 
         //The main function
