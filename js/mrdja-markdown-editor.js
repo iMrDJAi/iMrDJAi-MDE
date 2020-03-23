@@ -1,5 +1,5 @@
 (function () {
-    window.mrdjaMDE = function (taSelector, size, buttons) {
+    window.mrdjaMDE = function (taSelector, buttons) {
         /***************************************************************************\
         *******************************Main functions********************************
         \***************************************************************************/
@@ -145,17 +145,21 @@
             type: "separator"
         },
         {
+            name: "resize",
+            icon: "&#xFE91;",
+            css_class: "markdown-editor-button",
+            action: resize,
+        },
+        {
             name: "help",
             icon: "&#xF2D7;",
             css_class: "markdown-editor-button",
             action: help,
-        },
+        }
         ];
 
         //The main function
-        (function () { //Usage example: createMDE("#input", [600, 800], buttons);
-
-            if (typeof (size) !== 'object' || isNaN(size[0]) || isNaN(size[1])) size = [500, 700]; //Use the default size if the user didn't customize it
+        (function () { //Usage example: createMDE("#input", buttons);
             if (!buttons) buttons = mrdjaMDE.defaultButtonsObj; //Use the default buttons if the user didn't customize them
             //ta needs a check! 
 
@@ -167,8 +171,6 @@
             mrdjaMDE.mde = mde;
             ta.parentNode.insertBefore(mde, ta); //Insert the div before the textarea
             mde.classList.add("markdown-editor"); //Add the editor css class
-            mde.style.height = `${size[0]}px`; //Resizing
-            mde.style.width = `${size[1]}px`; //Resizing
 
             //Create the toolbar element
             const toolbar = document.createElement("div");
@@ -664,6 +666,16 @@
                     mrdjaMDE.txtarea.focus();
                     previewUpdateAndRecord();
                 }
+            }
+        }
+
+        function resize() {
+            if (mrdjaMDE.split.getSizes()[0] > 50) {
+                mrdjaMDE.split.setSizes([50, 50]);
+            } else if (mrdjaMDE.split.getSizes()[0] <= 50 && mrdjaMDE.split.getSizes()[0] > 2) {
+                mrdjaMDE.split.setSizes([0, 100]);
+            } else if (mrdjaMDE.split.getSizes()[0] <= 2) {
+                mrdjaMDE.split.setSizes([100, 0]);
             }
         }
 
