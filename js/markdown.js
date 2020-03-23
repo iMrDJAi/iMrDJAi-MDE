@@ -98,7 +98,7 @@
     function markdownitSupSubscript(n) {
         if (n === 0) { //^(supscript)
             return window.markdownitRegexp(
-                /\^\(([\s\S]+?)[\)]/,
+                /\^\(((?:\[[^\]]*\]\([^)]*\)|[\s\S])+?)\)/,
                 function (match, utils) {
                     const html = inlineRenderer('supsubscript').render(match[1], env);
                     return `<sup>${html.replace(/\<p\>|\<\/p\>\s/g, '')}</sup>`;
@@ -107,7 +107,7 @@
         }
         if (n === 1) { //~(subscript)
             return window.markdownitRegexp(
-                /\~\(([\s\S]+?)[\)]/,
+                /\~\(((?:\[[^\]]*\]\([^)]*\)|[\s\S])+?)\)/,
                 function (match, utils) {
                     const html = inlineRenderer('supsubscript').render(match[1], env);
                     return `<sub>${html.replace(/\<p\>|\<\/p\>\s/g, '')}</sub>`;
