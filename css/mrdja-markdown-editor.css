@@ -3,6 +3,8 @@
     grid-template-rows: min-content auto;
     box-sizing: border-box;
     border: 1px solid #bbbbbb;
+    height: 100%;
+    width: 100%;
 }
 
 .markdown-editor-toolbar {
@@ -10,18 +12,16 @@
     box-sizing: border-box;
     padding: 10px 10px 0 10px;
     border-bottom: 1px solid #bbbbbb;
-    font-size: 0;
-    grid-row-start: 1;
     background-color: #2f2f2f;
     display: flex;
     flex-wrap: wrap;
 }
 
 .markdown-editor-body {
-    grid-row-start: 2;
     display: flex;
     box-sizing: border-box;
     overflow: hidden;
+	background: #404040;
 }
 
 .markdown-editor-button {
@@ -112,10 +112,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .markdown-editor {
-        width: 100% !important;
-    }
-
     .markdown-editor-button {
         font-size: 27px;
         height: 35px;
