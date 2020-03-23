@@ -21,7 +21,7 @@
     display: flex;
     box-sizing: border-box;
     overflow: hidden;
-	background: #404040;
+    background: #404040;
 }
 
 .markdown-editor-button {
