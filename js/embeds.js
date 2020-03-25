@@ -17,12 +17,11 @@ window.mrdjaEmbeds = async function (img) { //So for markdown we will use the im
             if (/^((http|https):\/\/)?(www.)?(youtube-nocookie.com)/i.test(url)) {
                 embed.innerHTML = `
                     <svg viewBox="0 0 16 9"></svg>
-                    <iframe src="https://www.youtube.com/embed/${id}" allowfullscreen="" allow="encrypted-media" frameborder="0"></iframe>
-                `;
+                    <iframe src="https://www.youtube-nocookie.com/embed/${id}" allowfullscreen="" allow="encrypted-media" frameborder="0"></iframe>                `;
             } else { 
                 embed.innerHTML = `
                     <svg viewBox="0 0 16 9"></svg>
-                    <iframe src="https://www.youtube-nocookie.com/embed/${id}" allowfullscreen="" allow="encrypted-media" frameborder="0"></iframe>
+                    <iframe src="https://www.youtube.com/embed/${id}" allowfullscreen="" allow="encrypted-media" frameborder="0"></iframe>
                 `;
             }
             img.replaceWith(embed);
