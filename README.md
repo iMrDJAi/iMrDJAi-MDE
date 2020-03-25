@@ -7,7 +7,7 @@ Thats the [Github Pages](https://imrdjai.github.io/iMrDJAi-MDE/?version=) link, 
 
 **Note:** You will see that the URL is followed with a query (`?version=`), it's just a trick to flush the cache and to force page to show its new changes. You can put any random string that you didn't use before as its value.
 ## To-Do
-- [ ] Make it responsive.
+- [x] Make it responsive.
 - [x] Add a resize button (to make it easy to resize for mobile users).
 - [x] Update the sup/subscript regex (to support using the links syntax).
 - [ ] Update the Embeds system (it needs more work).
