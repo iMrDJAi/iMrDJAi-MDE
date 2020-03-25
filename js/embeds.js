@@ -179,7 +179,7 @@ window.mrdjaEmbeds = async function (img) { //So for markdown we will use the im
                                 }
                             }
                         }
-                    }, 1000);
+                    }, 1500);
                 });
             }
         }
