@@ -4,7 +4,7 @@ window.mrdjaEmbeds = async function (img) { //So for markdown we will use the im
         if (!url.match(/^[a-zA-Z]+:\/\//)) {
             url = "http://" + url;
             img.setAttribute('src', url);
-        } else if (/^((http|https):\/\/)?(www.)?(youtube.com|youtu.be|youtube-nocookie.com)/i.test(url) && /(\/|%3D|v=)([0-9A-z-_]{11})([%#?&]|$)/i.test(url)) { //Youtube embeds!
+        } else if (/^((http|https):\/\/)?(www.)?(youtube.com\/|youtu.be\/|youtube-nocookie.com\/)/i.test(url) && /(\/|%3D|v=)([0-9A-z-_]{11})([%#?&]|$)/i.test(url)) { //Youtube embeds!
             var p = img;
             while (p.nodeName !== "BODY") {
                 p = p.parentNode;
@@ -17,11 +17,12 @@ window.mrdjaEmbeds = async function (img) { //So for markdown we will use the im
             if (/^((http|https):\/\/)?(www.)?(youtube-nocookie.com)/i.test(url)) {
                 embed.innerHTML = `
                     <svg viewBox="0 0 16 9"></svg>
-                    <iframe src="https://www.youtube-nocookie.com/embed/${id}" allowfullscreen="" allow="encrypted-media" frameborder="0"></iframe>                `;
+                    <iframe src="https://www.youtube-nocookie.com/embed/${id}" style="height: 100%; width: 100%;" allowfullscreen="" allow="encrypted-media" frameborder="0"></iframe>
+                `;
             } else { 
                 embed.innerHTML = `
                     <svg viewBox="0 0 16 9"></svg>
-                    <iframe src="https://www.youtube.com/embed/${id}" allowfullscreen="" allow="encrypted-media" frameborder="0"></iframe>
+                    <iframe src="https://www.youtube.com/embed/${id}" style="height: 100%; width: 100%;" allowfullscreen="" allow="encrypted-media" frameborder="0"></iframe>
                 `;
             }
             img.replaceWith(embed);
