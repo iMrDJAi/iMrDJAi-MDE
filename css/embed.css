@@ -11,7 +11,13 @@
 }
 
 ._EMBED_iframe {
+    display: grid;
     background: #1b1b1b;
+}
+
+._EMBED_iframe > * {
+    grid-area: 1 / 1 / 2 / 2;
+    min-width: 200px;
 }
 
 ._EMBED_loadingicon {
