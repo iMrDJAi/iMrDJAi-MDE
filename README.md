@@ -17,7 +17,7 @@ Thats the [Github Pages](https://imrdjai.github.io/iMrDJAi-MDE/?version=) link, 
 - [ ] More unexpected work.
 - [ ] First release.
 ## Problems
-- [ ] I need to find a way to apply aspect ratio on Youtube iframes. It should be: aspect-ratio: 16:9, max-width: 100%, min-width: 200px.
+- [x] I need to find a way to apply aspect ratio on Youtube iframes. It should be: aspect-ratio: 16:9, max-width: 100%, min-width: 200px.
 ## Future plans
 - Add Codemirror and customize the markdown mode to add the new tags.
 - Add new tags:
