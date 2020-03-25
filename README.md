@@ -13,7 +13,7 @@ Thats the [Github Pages](https://imrdjai.github.io/iMrDJAi-MDE/?version=) link, 
 - [ ] Update the Embeds system (it needs more work).
 - [ ] Add customizable text length limit.
 - [ ] Update the help text.
-- [ ] Shouldn't I replace the image button with an embed button? (because the MDE now supports videos, audios, embed and more).
+- [ ] Shouldn't I replace the image button with an embed button? (because the MDE now supports videos, audios, embeds and more).
 - [ ] More unexpected work.
 - [ ] First release.
 ## Problems
