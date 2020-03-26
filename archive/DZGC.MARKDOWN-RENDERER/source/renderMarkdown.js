@@ -108,7 +108,7 @@
         }
         if (n === 2) { //^supscript ~subscript
             return window.markdownitRegexp(
-                /([\^|\~])(\S+)/,
+                /([\^|\~])((?:\[[^\]]*\]\([^)]*\)|[\S])+)/,
                 function (match, utils) {
                     if (match[1] === '^') {
                         const html = inlineRenderer('supsubscript').render(match[2], env);
