@@ -134,7 +134,7 @@
             action: link,
         },
         {
-            name: "image",
+            name: "embed",
             icon: "&#xF2E9;",
             css_class: "markdown-editor-button",
             action: image,
