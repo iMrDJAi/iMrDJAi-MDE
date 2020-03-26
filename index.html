@@ -18,18 +18,22 @@
                         height: 100vh;
                         background: #464646;
                 }
-                body > div {
-                        margin: auto;
-                }
                 .title {
                         color: #a2a2a2;
                         text-align: center;
                         text-decoration-line: underline;
                 }
+                .container {
+                        width: 100%;
+                        max-width: 1000px;
+                        height: 85%;
+                        margin: auto;                    
+                }
         </style>
         <h1 class="title">${Mr.DJA} Markdown Editor</h1>
-        <textarea id="input"></textarea>
-
+        <div class="container">
+                <textarea id="input"></textarea>
+        <div>             
         <script src="./misc/plyr/plyr.min.js"></script>
         <script src="./js/markdown.js"></script>
         <script src="./js/embeds.js"></script>
@@ -37,7 +41,7 @@
         <script src="./js/UndoRedo.js"></script>
         <script src="./js/mrdja-markdown-editor.js"></script>
         <script>
-                a = window.mrdjaMDE("#input");
+                var a = window.mrdjaMDE("#input");
         </script>
 </body>
 
