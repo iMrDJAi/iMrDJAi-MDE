@@ -12,7 +12,7 @@ Thats the [Github Pages](https://imrdjai.github.io/iMrDJAi-MDE/?version=) link, 
 - [x] Update the sup/subscript regex (to support using the links syntax).
 - [ ] Update the Embeds system (it needs more work).
 - [x] ~~Add customizable text length limit.~~ (no need, maxlength attribute on textarea tag can handle that).
-- [ ] Update the help text.
+- [x] Update the help text.
 - [ ] Shouldn't I replace the image button with an embed button? (because the MDE now supports videos, audios, embeds and more).
 - [ ] More unexpected work.
 - [ ] First release.
