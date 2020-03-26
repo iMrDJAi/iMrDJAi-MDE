@@ -137,7 +137,7 @@
             name: "embed",
             icon: "&#xF2E9;",
             css_class: "markdown-editor-button",
-            action: image,
+            action: embed,
         },
         {
             icon: "&#xF374",
@@ -643,7 +643,7 @@
             }
         }
 
-        function image() {
+        function embed() {
             if (mrdjaMDE.isHelp === false) {
                 var selstart = mrdjaMDE.txtarea.selectionStart;
                 var selend = mrdjaMDE.txtarea.selectionEnd;
