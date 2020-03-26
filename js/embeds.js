@@ -47,7 +47,6 @@ window.mrdjaEmbeds = async function (img) { //So for markdown we will use the im
             }, 10000);
         } else {
             embedAPI(url).then(async data => { //Now we will use the API to get the url data.
-                console.log(data);
                 if (img.isConnected) {
                     if (!data.error) { //This will deal with errors.
                         if (img.attributes.title) var title = img.attributes.title.value; else var title = ''; //Get the title.
@@ -156,7 +155,6 @@ window.mrdjaEmbeds = async function (img) { //So for markdown we will use the im
                             isvalid();
                             async function isvalid() {
                                 var a = await urlValidityCheck(url);
-                                console.log(a);
                                 if (a === "offline") {
                                     isvalid();
                                 } else if (a === "invalid") {
@@ -167,7 +165,6 @@ window.mrdjaEmbeds = async function (img) { //So for markdown we will use the im
                             }
                             async function hasMedia() {
                                 var a = await mediaCheck(url);
-                                console.log(a);
                                 if (a === "offline") {
                                     hasMedia();
                                 } else if (a === "video") {
@@ -272,6 +269,5 @@ window.mrdjaEmbeds = async function (img) { //So for markdown we will use the im
             }
             return string;
         }
-
     }    
 }
