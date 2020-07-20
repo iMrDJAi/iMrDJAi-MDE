@@ -1,5 +1,6 @@
+Replaced with [MDE Ultimate](https://github.com/iMrDJAi/MDE-Ultimate).
 ***
-# iMrDJAi-MDE - Coming Soon..
+# iMrDJAi-MDE
 ${Mr.DJA} Markdown Editor - Open source, Simple, Easy to use and fully featured markdown editor built with vanilla Javascript, and powered by good libraries.
 ***
 ## For Testing
